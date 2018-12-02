@@ -45,4 +45,5 @@ for i in range (anho, anho_hoy):
     else:
         dias_tot += 365
 
-print dias_tot-restar_dias
+result = dias_tot-restar_dias
+print "Ha vivido", result
