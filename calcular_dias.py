@@ -38,10 +38,9 @@ for i in range (0, (mes_hoy-1)):
 for i in range (anho, anho_hoy):
     if (i%400==0):
         dias_tot += 366
-    elif (i%100==0):
-        dias_tot += 366
-    elif (i%4==0):
-        dias_tot += 366
+    elif (i%100!=0):
+        if (i%4==0):
+            dias_tot += 366
     else:
         dias_tot += 365
 
