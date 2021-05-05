@@ -14,9 +14,9 @@ mes_hoy = int(mes_today)
 anho_hoy = int(anho_today)
 
 # NACIMIENTO
-dia = input ("Día de nacimiento: ")
-mes = input ("Mes de nacimiento: ")
-anho = input ("Año de nacimiento (cuatro dígitos): ")
+dia = int(input ("Día de nacimiento: "))
+mes = int(input ("Mes de nacimiento: "))
+anho = int(input ("Año de nacimiento (cuatro dígitos): "))
 
 
 
@@ -44,4 +44,4 @@ for i in range (anho, anho_hoy):
         dias_tot += 365
 
 result = dias_tot-restar_dias
-print "Ha vivido", result, "día(s)"
+print ('Ha vivido ' + str(result) + ' día(s)')
